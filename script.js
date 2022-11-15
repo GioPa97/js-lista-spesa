@@ -10,8 +10,10 @@ for (i = 0; i < ListaSpesa.length; i++) {
 i = 0;
 let DaComprare = "";
 while (ListaSpesa[i]) {
-  DaComprare += ListaSpesa[i] + " ";
-  i++;
+    DaComprare += ListaSpesa[i] + "<br>"
+    i++;
 }
 
 console.log(DaComprare);
+
+document.getElementById("TestoSpesa").innerHTML = DaComprare;
