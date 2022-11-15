@@ -22,3 +22,12 @@ while (i < ListaSpesa.length) {
     MiaSpesa.innerHTML += `<li>` + ListaSpesa[i] + `</li>`
     i++;
 }
+
+let ButtonNew = document.getElementById("ButtonNew");
+addEventListener(`click`, function () {
+
+    let NewItem = document.getElementById("NewItem").value;
+    ListaSpesa.push(NewItem);
+    console.log(NewItem);
+    document.getElementById("MiaSpesa").innerHTML += "<li>" + NewItem + "</li>";
+});
