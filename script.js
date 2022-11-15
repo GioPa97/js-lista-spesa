@@ -3,17 +3,22 @@ Quando le stampe in console sono corrette, stampare gli elementi in un elenco pu
 
 const ListaSpesa = ["uova", "latte", "biscotti", "caffè", "burro", "pane", "marmellata"];
 
+/*CICLO FOR_______________________________________________________________________________//
+
 for (i = 0; i < ListaSpesa.length; i++) {
     console.log(ListaSpesa[i]);
 }
+*/
+
+//CICLO WHILE_____________________________________________________________________________//
 
 i = 0;
-let DaComprare = "";
-while (ListaSpesa[i]) {
-    DaComprare += ListaSpesa[i] + "<br>"
+while (i < ListaSpesa.length) {
+
+    console.log(ListaSpesa[i]);
+
+    //STAMPA IN HTML__________________________________________________________________________//
+
+    MiaSpesa.innerHTML += `<li>` + ListaSpesa[i] + `</li>`
     i++;
 }
-
-console.log(DaComprare);
-
-document.getElementById("TestoSpesa").innerHTML = DaComprare;
